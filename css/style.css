@@ -102,21 +102,17 @@ button {
 
 
 /* start home page */
-section .banner {
+.home {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
-section .banner.padding {
-    padding-top: 70px;
-}
-
-section .banner .banner-text {
+.home .home-text {
     margin: auto;
-    flex-basis: 95%;
+    flex-basis: 45%;
 }
 
-section .banner .banner-text .banner-text-info {
+.home .home-text .home-text-info {
     flex-direction: row;
     display: flex;
     align-items: center;
@@ -124,124 +120,67 @@ section .banner .banner-text .banner-text-info {
     justify-content: center;
 }
 
-section .banner .banner-text .banner-text-info h1 {
+.home .home-text .home-text-info h1 {
     font-size: calc(var(--defult-font-size)+50px);
-    font-weight: 900;
     color: var(--main-color);
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
 }
 
-section .banner .banner-text .banner-text-info span {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-}
-
-section .banner .banner-text .banner-text-info span h3 {
+.home .home-text .home-text-info span h3 {
     font-size: calc(var(--defult-font-size)+20px);
-    color: #FF5363;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 14px;
+    color: var(--red);
 }
 
-section .banner .banner-text .banner-text-info span h2 {
+.home .home-text .home-text-info span h2 {
     font-size: calc(var(--defult-font-size)+30px);
-    color: #50658e;
-    font-family: 'Oswald', sans-serif;
+    color:var(--blue);
 }
 
-
-
-section .banner .banner-text .banner-text-info-text {
-    margin: 0 auto 50px;
-}
-
-section .banner .banner-text .banner-text-info-text p {
+.home .home-text .home-text-info-text p {
     color: var(--main-color);
-    font-size: calc(var(--defult-font-size)+15px);
-    text-align: center;
-    margin: 30px 0 50px;
+    font-size: calc(var(--defult-font-size)+20px);
 }
 
-section .banner .banner-text .banner-text-info-text button {
-    padding: 13px 30px;
-    font-size: calc(var(--defult-font-size)+16px);
+.home .home-text .home-text-info-text button {
+    font-size: calc(var(--defult-font-size)+20px);
 }
 
-section .btn-container {
+.btn-container {
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-section .btn-container a {
-    margin: 15px 30px;
-}
-
-
-.banner .banner-text .banner-text-info-text a {
+.home .home-text .home-text-info-text a {
     color: var(--main-color);
     text-decoration: none;
-    font-weight: bold;
 }
 
-section .banner .banner-text .banner-text-info-text a:hover {
+ .home .home-text .home-text-info-text a:hover {
     color: var(--main-color);
 }
 
-section .banner .banner-text .banner-text-info-text a svg {
-    margin-left: 10px;
-}
-
-
-
-
-
-section .banner .banner-text .banner-text-numbers {
+ .home .home-text .home-text-numbers {
     flex-direction: row;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-
-section .banner .banner-text .banner-text-numbers .banner-text-number p:last-of-type {
-    letter-spacing: 0.04em;
-    color: #465675;
+.home .home-text .home-text-numbers .home-text-number h1 {
     font-size: calc(var(--defult-font-size)+24px);
-    font-weight: 900;
-    margin-bottom: 10px;
-    font-style: normal;
-}
-
-section .banner .banner-image {
-    flex-basis: 90%;
-    margin: 50px auto 0;
-}
-
-section .banner .banner-image img {
-    width: 100%;
-    height: auto;
+    color: var(--main-color);
 }
 
 
-section .banner {
-    flex-wrap: nowrap;
+ .home .home-text .home-text-numbers .home-text-number p{
+    color: var(--main-color);
+    font-size: calc(var(--defult-font-size)+24px);
 }
 
-section .banner .banner-text {
-    flex-basis: 45%;
-}
-
-section .banner .banner-text .banner-text-info-text p {
-    text-align: left;
-}
-
-section .banner .banner-image {
+ .home .home-image {
     flex-basis: 55%;
 }
 
-section .banner .banner-image img {
+ .home .home-image img {
     width: 100%;
     height: auto;
 }
